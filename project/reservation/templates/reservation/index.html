@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Reservation System</title>
+        {% load static %}
+        <link rel="stylesheet" type="text/css" href="{% static "main.css" %}"}">
+    </head>
+
+    <body>
+        <header>
+            <a href="/reservation/">
+                <h1>ReserveR</h1>
+            </a>
+            <nav id="navigation">
+                <ul class="nav-links">
+                    <li>☰</li>
+                </ul>
+            </nav>
+        </header>
+        
+        {% if latest_appointment_list %}
+        <ul>
+            {% for appointment in latest_appointment_list %}
+            <li>
+                <a href="/reservation/{{ appointment.id }}/">{{ appointment.timeslot }}</a>
+            </li>
+            {% endfor %}
+        </ul>
+        {% else %}
+        <p>No appointments are available.</p>
+        {% endif %}
+    </body>
+</html>

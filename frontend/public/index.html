@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#521a4a">
+    <title>ReserveR</title>
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P|Rock+Salt" rel="stylesheet">
+    <style>
+      header {
+        background-color: #521a4a;
+        display: flex;
+        align-items: center;
+        padding: 20px;
+        justify-content: space-between;
+        padding: 0.5em 10vw;
+      }
+
+      .logo {
+        font-family: 'Rock Salt', cursive;
+        color: #25a9f0;
+      }
+
+      #navlinks {
+          font-family: 'Press Start 2P', monospace;
+          list-style-type: none;
+          color: #d8247c;
+          padding: 0;
+          display: flex;
+          justify-content: space-around;
+      }
+
+      #navlinks li {
+        float: right;
+        padding-right: 10px;
+      }
+
+      #root {
+        height: 10em;
+        position: relative;
+        font-family: 'Press Start 2P', monospace;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+        color: #240e28;
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+    <header>
+      <h2 class="logo">ReserveR</h2>
+      <!-- <nav>
+        <ul id="navlinks">
+          <li>Venue List</li>
+          <li>Calendar</li>
+        </ul>
+      </nav> -->
+    </header>
+    <div id="root"></div>
+  </body>
+</html>

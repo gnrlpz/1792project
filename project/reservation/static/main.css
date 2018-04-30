@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5em 7vw;
+}
+
+#navigation {
+    width: 25%;
+}
+
+.nav-links {
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+#navigation ul li {
+    list-style-type: none;
+}
